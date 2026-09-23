@@ -1,14 +1,14 @@
-//Collecting elements for easier reading later
-//getElementsByTagName gets a list; we only want the FIRST object of the list
 var header = document.getElementsByTagName("h1")[0];
-
-let css_g = document.styleSheets[0];
+let css = document.styleSheets[0];
 
 function add_rule(){
-    //header.textContent="Working";
-    css_g.insertRule("h1{ text-shadow: 2px 2px 5px #2F23FA;}");
+    css.insertRule("h1{ text-shadow: 2px 2px 5px #2F23FA;}");
 }
 function change_rule(){
+    css.style.setProperty("text-shadow-color", "rgb(250, 35, 92)");
 }
 function delete_rule(){
+    let new_rule_index = css.cssRules.length-1;
+    if (css.cssRules[new_rule_index].selectorText === "h1")
+        css.deleteRule(new_rule_index);
 }
