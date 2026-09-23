@@ -9,7 +9,7 @@ function add_rule(){
 }
 function change_rule(){
     if (new_rule_index != -1)
-        css.cssRules[new_rule_index].style.setProperty("text-shadow-color", "rgb(250, 35, 92)");
+        css.cssRules[new_rule_index].style.setProperty("text-shadow", "2px 2px 5px rgb(250, 35, 92)");
 }
 function delete_rule(){
     css.deleteRule(new_rule_index);
