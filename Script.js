@@ -1,4 +1,4 @@
-var header = document.getElementsByTagName("h1")[0];
+let header = document.getElementById("header");
 let css = document.styleSheets[0];
 
 function add_rule(){
