@@ -8,7 +8,8 @@ function add_rule(){
             new_rule_index=i;
 }
 function change_rule(){
-    css.cssRules[new_rule_index].style.setProperty("text-shadow-color", "rgb(250, 35, 92)");
+    if (new_rule_index != -1)
+        css.cssRules[new_rule_index].style.setProperty("text-shadow-color", "rgb(250, 35, 92)");
 }
 function delete_rule(){
     css.deleteRule(new_rule_index);
