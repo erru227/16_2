@@ -5,6 +5,7 @@ function add_rule(){
     css.insertRule("h1{ text-shadow: 2px 2px 5px #2F23FA;}");
 }
 function change_rule(){
+    header.textContent="Working 2";
     header.style.setProperty("text-shadow-color", "rgb(250, 35, 92)");
 }
 function delete_rule(){
