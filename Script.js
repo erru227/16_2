@@ -9,6 +9,8 @@ function change_rule(){
 }
 function delete_rule(){
     let new_rule_index = css.cssRules.length-1;
-    if (css.cssRules[new_rule_index].selectorText === "h1")
+    if (css.cssRules[new_rule_index].selectorText === "h1"){
         css.deleteRule(new_rule_index);
+        header.textContent="Working";
+    }
 }
