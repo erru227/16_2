@@ -8,10 +8,8 @@ function add_rule(){
             new_rule_index=i;
 }
 function change_rule(){
-    if (new_rule_index != -1){
-        document.getElementsByTagName("h1")[0].textContent="Working";
+    if (new_rule_index != -1)
         css.cssRules[new_rule_index].style.setProperty("text-shadow", "2px 2px 5px rgb(250, 35, 92)");
-    }
 }
 function delete_rule(){
     css.deleteRule(new_rule_index);
